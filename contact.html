@@ -1,60 +1,108 @@
 <!DOCTYPE html>
 <html>
+  <!--HEAD-->
 
-<!--HEAD-->
-  
-<!-- Mirrored from broomstick.cc/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Dec 2019 20:41:47 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-    <meta name="description" content="Get in touch with us for a free, no-obligation quote. broomstick.cc is an industry leading solution for web development, at a price that won't break the bank. We're here to support small businesses, and anyone that may need a modern, on-brand portfolio/brochure website for their business." />
+  <!-- Mirrored from broomstick.cc/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Dec 2019 20:41:47 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="utf-8"
+    />
+    <meta
+      name="description"
+      content="Get in touch with us for a free, no-obligation quote. broomstick.cc is an industry leading solution for web development, at a price that won't break the bank. We're here to support small businesses, and anyone that may need a modern, on-brand portfolio/brochure website for their business."
+    />
     <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="webdevelopment, build_a_website, website, agency, web, development, design, design_company" />
+    <meta
+      name="keywords"
+      content="webdevelopment, build_a_website, website, agency, web, development, design, design_company"
+    />
     <meta name="author" content="jhardyjhardy + angellemarie" />
     <link rel="stylesheet" type-"text/css" href="resources/css/reset.min.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <link rel="shortcut icon" href="resources/images/logo%20blue.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="resources/images/logo.png"
+      type="image/x-icon"
+    />
     <title>broomstick.cc</title>
-  </head> <!--END HEAD-->
+  </head>
+  <!--END HEAD-->
 
-
-<!--BODY-->
+  <!--BODY-->
   <body>
-
-<!--PAGE CONTAINER-->
+    <!--PAGE CONTAINER-->
     <div class="container page column">
-
-<!--HEADER CONTAINER-->
+      <!--HEADER CONTAINER-->
       <div class="container column pricing pageWidth" id="headerContainer">
         <!--HEADER SITE CONTAINER-->
         <div class="container row siteContainer" id="headerSiteContainer">
           <!--HEADER LOGO CONTAINER-->
-          <a href="index-2.html" class="container column hContainer" id="headerLogoContainer">
-            <img class="object logo" id="headerMainLogo" src="resources/images/headerLogoAgain.png">
-            <img class="object logo" id="headerScrollLogo" src="resources/images/headerLogoAgain.png">
+          <a
+            href="index-2.html"
+            class="container column hContainer"
+            id="headerLogoContainer"
+          >
+            <img
+              class="object logo"
+              id="headerMainLogo"
+              src="resources/images/logo.png"
+            />
+            <img
+              class="object logo"
+              id="headerScrollLogo"
+              src="resources/images/logo.png"
+            />
           </a>
           <!-- HEADER NAV CONTAINER -->
-          <div class= "navContainer hContainer container row" id="headerNavContainer">
+          <div
+            class="navContainer hContainer container row"
+            id="headerNavContainer"
+          >
             <nav class="container headerNav row" id="headerNav">
-              <p class="object navItem" id="navItem1"><a href="index-2.html">Home</a></p>
-              <p class="object navItem" id="navItem2"><a href="pricing.html">Pricing</a></p>
-              <p class="object navItem" id="navItem3"><a href="about.html">About Us</a></p>
+              <p class="object navItem" id="navItem1">
+                <a href="index-2.html">Home</a>
+              </p>
+              <p class="object navItem" id="navItem2">
+                <a href="pricing.html">Pricing</a>
+              </p>
+              <p class="object navItem" id="navItem3">
+                <a href="about.html">About Us</a>
+              </p>
             </nav>
-            <a class="button outline pricing container" id="contactButton" href="contact.html">
+            <a
+              class="button outline pricing container"
+              id="contactButton"
+              href="contact.html"
+            >
               <div class="container column" id="buttonOutline">
                 <p class="buttonText object" id="contactButtonText">Contact</p>
               </div>
             </a>
-            <div class="mobileNav pricing container column" id="mobileNavBurger" onclick="openNav()">
+            <div
+              class="mobileNav pricing container column"
+              id="mobileNavBurger"
+              onclick="openNav()"
+            >
               <div class="bar1"></div>
               <div class="bar2"></div>
               <div class="bar3"></div>
             </div>
-          </div> <!-- END HEADER NAV -->
-        </div> <!-- END HEADER SITE CONTAINER -->
-      </div> <!-- END HEADER CONTAINER -->
+          </div>
+          <!-- END HEADER NAV -->
+        </div>
+        <!-- END HEADER SITE CONTAINER -->
+      </div>
+      <!-- END HEADER CONTAINER -->
       <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
         <div class="overlay-content">
           <a href="index-2.html">Home</a>
           <a href="pricing.html">Pricing</a>
@@ -68,157 +116,235 @@
         <p id="contactSubHead">We want to know how we can help you.</p>
       </div>
 
-<div id="formPage">
+      <div id="formPage">
+        <div class="container column siteContainer" id="formContainer">
+          <!-- using formspree for form submission so we can get this puppy live asap **** wait for react rebuild to f* with this -->
 
-      <div class="container column siteContainer" id="formContainer">
+          <form
+            class="sucess-none"
+            id="newContact"
+            name="newContact"
+            data-netlify="true"
+          >
+            <label for="fName">Name:</label>
+            <input
+              type="text"
+              value=""
+              id="name"
+              name="FName"
+              class="required name"
+              required
+            />
 
-        <!-- using formspree for form submission so we can get this puppy live asap **** wait for react rebuild to f* with this -->
+            <label for="coName">Name of Business:</label>
+            <input
+              type="text"
+              id="coName"
+              name="CoName"
+              value=""
+              class="required coName"
+            />
 
-        <form class="sucess-none" id="newContact" netlify >
+            <label for="industry">Industry/Type of Business:</label>
+            <input
+              type="text"
+              id="industry"
+              name="Industry"
+              value=""
+              class="required industry"
+            />
 
-          <label for="fName">Name:</label>
-          <input type="text" value="" id="name" name="FName" class="required name" required>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="Email"
+              value=""
+              class="required email"
+              required
+            />
 
-          <label for="coName">Name of Business:</label>
-          <input type="text" id="coName" name="CoName" value="" class="required coName">
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="Phone"
+              value=""
+              class="required phone"
+            />
 
-          <label for="industry">Industry/Type of Business:</label>
-          <input type="text" id="industry" name="Industry" value="" class="required industry">
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="Email" value="" class="required email" required>
-
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="Phone" value="" class="required phone">
-
-          <label for="prefContact">Preferred form of contact:</label>
-          <div id="prefContactContainer">
-            <div class="option">Email<input type="checkbox" value="email" name="contactOption" id="emailOption"></div>
-            <div class="option">Phone<input type="checkbox" value="phone" name="contactOption" id="phoneOption"></div>
-          </div>
-
-          <label for="website">Current website URL:</label>
-          <input type="url" id="website" name="Website" placeholder="(if applicable)" value="">
-
-          <!-- is it me you're looking fooooor? -->
-          <p id="looking">What are you looking for?</p>
-
-          <label for="extras">Please check all that apply:</label>
-          <div id="extrasBox">
-            <div id="setOne">
-              <div class="option">E-Commerce<input type="checkbox" value="ecommerce" name="extrasCom" id="ecomm"></div>
-              <div class="option">Online Reservations<input type="checkbox" name="extrasRez" id="rez"></div>
-              <div class="option">Portfolio<input type="checkbox" name="extrasPort" id="port"></div>
-              <div class="option">Landing Page(s)<input type="checkbox" name="extrasPage" id="ePage"></div>
+            <label for="prefContact">Preferred form of contact:</label>
+            <div id="prefContactContainer">
+              <div class="option">
+                Email<input
+                  type="checkbox"
+                  value="email"
+                  name="contactOption"
+                  id="emailOption"
+                />
+              </div>
+              <div class="option">
+                Phone<input
+                  type="checkbox"
+                  value="phone"
+                  name="contactOption"
+                  id="phoneOption"
+                />
+              </div>
             </div>
-            <div id="setTwo">
-              <div class="option">Self-Editable<input type="checkbox" name="extrasEdit" id="editable"></div>
-              <div class="option">Domain/Hosting<input type="checkbox" name="extrasHost"></div>
-              <div class="option">Migration<input type="checkbox" name="extrasMigration"></div>
-              <div class="option">App-Functionality<input type="checkbox" name="extrasAppFunc"></div>
+
+            <label for="website">Current website URL:</label>
+            <input
+              type="url"
+              id="website"
+              name="Website"
+              placeholder="(if applicable)"
+              value=""
+            />
+
+            <!-- is it me you're looking fooooor? -->
+            <p id="looking">What are you looking for?</p>
+
+            <label for="extras">Please check all that apply:</label>
+            <div id="extrasBox">
+              <div id="setOne">
+                <div class="option">
+                  E-Commerce<input
+                    type="checkbox"
+                    value="ecommerce"
+                    name="extrasCom"
+                    id="ecomm"
+                  />
+                </div>
+                <div class="option">
+                  Online Reservations<input
+                    type="checkbox"
+                    name="extrasRez"
+                    id="rez"
+                  />
+                </div>
+                <div class="option">
+                  Portfolio<input type="checkbox" name="extrasPort" id="port" />
+                </div>
+                <div class="option">
+                  Landing Page(s)<input
+                    type="checkbox"
+                    name="extrasPage"
+                    id="ePage"
+                  />
+                </div>
+              </div>
+              <div id="setTwo">
+                <div class="option">
+                  Self-Editable<input
+                    type="checkbox"
+                    name="extrasEdit"
+                    id="editable"
+                  />
+                </div>
+                <div class="option">
+                  Domain/Hosting<input type="checkbox" name="extrasHost" />
+                </div>
+                <div class="option">
+                  Migration<input type="checkbox" name="extrasMigration" />
+                </div>
+                <div class="option">
+                  App-Functionality<input
+                    type="checkbox"
+                    name="extrasAppFunc"
+                  />
+                </div>
+              </div>
+              <div id="setThree">
+                <div class="option">
+                  Branding Add-on<input type="checkbox" name="extrasBrand" />
+                </div>
+                <div class="option">
+                  Photography Add-on<input type="checkbox" name="extrasPhoto" />
+                </div>
+                <div class="option">
+                  Analytics Add-on<input
+                    type="checkbox"
+                    name="extrasAnalytics"
+                  />
+                </div>
+                <div class="option">
+                  Advertising Add-on<input type="checkbox" name="extrasAds" />
+                </div>
+              </div>
             </div>
-            <div id="setThree">
-              <div class="option">Branding Add-on<input type="checkbox" name="extrasBrand"></div>
-              <div class="option">Photography Add-on<input type="checkbox" name="extrasPhoto"></div>
-              <div class="option">Analytics Add-on<input type="checkbox" name="extrasAnalytics"></div>
-              <div class="option">Advertising Add-on<input type="checkbox" name="extrasAds"></div>
-            </div>
-          </div>
 
-          <label for="launchDate">Do you have a hard deadline or launch date?</label>
-          <input type="text" id="launchDate" name="launchDate" placeholder="If so, please let us know">
+            <label for="launchDate"
+              >Do you have a hard deadline or launch date?</label
+            >
+            <input
+              type="text"
+              id="launchDate"
+              name="launchDate"
+              placeholder="If so, please let us know"
+            />
 
-          <label for="otherInfo">Any other info you'd like us to know?</label>
-          <textarea id="otherInfo" name="otherInfo"></textarea>
+            <label for="otherInfo">Any other info you'd like us to know?</label>
+            <textarea id="otherInfo" name="otherInfo"></textarea>
 
-          <input class="button" type="submit" name="submitContact" id="submitButton" value="Submit">
-
-        </form>
-
+            <input
+              class="button"
+              type="submit"
+              name="submitContact"
+              id="submitButton"
+              value="Submit"
+            />
+          </form>
+        </div>
       </div>
-
-</div>
-<!-- FOOTER CONTAINER -->
+      <!-- FOOTER CONTAINER -->
       <footer class="footer container pageWidth column" id="footerContainer">
         <!-- FOOTER SITE CONTAINER -->
         <div class="container siteContainer row" id="footerSiteContainer">
           <!-- FOOTER LEFT SIDE -->
           <div class="container column" id="footerLeftContainer">
             <div class="container column" id="footerLeftTop">
-              <img class="footerLogo object" id="footerLogoIcon" src="resources/images/footer%20logo.png">
+              <img
+                class="footerLogo object"
+                id="footerLogoIcon"
+                src="resources/images/logo.png"
+              />
             </div>
-            <p class="object text copyright" id="footerCopyright"> &copy; <a href="index-2.html">broomstick.cc</a></p>
+            <p class="object text copyright" id="footerCopyright">
+              &copy; <a href="index-2.html">broomstick.cc</a>
+            </p>
           </div>
           <!-- FOOTER NAV -->
           <div class="container column" id="footerNavContainer">
             <nav class="footerNav container row" id="footerNav">
-              <span class="footerNavItem object text"><a href="pricing.html">Pricing</a></span>
-              <span class="footerNavItem object text"><a href="about.html">About Us</a></span>
-              <span class="footerNavItem object text"><a href="contact.html">Contact</a></span>
-              <span class="footerNavItem object text"><a href="terms.html">Terms</a></span>
+              <span class="footerNavItem object text"
+                ><a href="pricing.html">Pricing</a></span
+              >
+              <span class="footerNavItem object text"
+                ><a href="about.html">About Us</a></span
+              >
+              <span class="footerNavItem object text"
+                ><a href="contact.html">Contact</a></span
+              >
+              <span class="footerNavItem object text"
+                ><a href="terms.html">Terms</a></span
+              >
             </nav>
           </div>
-        </div> <!-- END FOOTER SITE CONTAINER -->
-      </footer> <!-- END FOOTER CONTAINER -->
-
-    </div> <!-- END PAGE CONTAINER -->
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NQQ99V7');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQQ99V7"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- FIREBASE -->
-    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDmHohRLVQQKpL7m1pYpCeC7XOSxzwb9Yc",
-        authDomain: "webside-1110a.firebaseapp.com",
-        databaseURL: "https://webside-1110a.firebaseio.com",
-        projectId: "webside-1110a",
-        storageBucket: "webside-1110a.appspot.com",
-        messagingSenderId: "1027742748230"
-      };
-      firebase.initializeApp(config);
-    </script>
+        </div>
+        <!-- END FOOTER SITE CONTAINER -->
+      </footer>
+      <!-- END FOOTER CONTAINER -->
+    </div>
+    <!-- END PAGE CONTAINER -->
 
     <script type="text/javascript">
-$(document).ready(function() {
-    if ($('#newContact').length > 0 ) {
-        contactScript('forcontact');
-    }
-});
-//firebase
-function contactScript(value) {
-    var a = {
-      apiKey: "AIzaSyAdqNXW1saxRPpIxBdVArnEOQ1Ow3eLbx8",
-	    authDomain: "discourse-skcript.firebaseapp.com",
-	    databaseURL: "https://discourse-skcript.firebaseio.com",
-	    projectId: "discourse-skcript",
-	    storageBucket: "discourse-skcript.appspot.com",
-	    messagingSenderId: "592087480717" };
-    firebase.initializeApp(a);
-    var b = firebase.database().ref("messages");
-        $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
-        var c = $("#name").val(),
-            d = $("#email").val(),
-            f = { name: c, email: d};
-        return b.push(f).then(function(a) {
-            $(".sucess").css("display", "block"),
-            $(".sucess-none").css("display", "none") }), !1 })
-}
-</script>
-
-
-</script>
+      $(document).ready(function() {
+        if ($('#newContact').length > 0) {
+          contactScript('forcontact')
+        }
+      })
+    </script>
     <!-- END FIREBASE -->
 
     <!-- FONT AWESOME -->
@@ -234,9 +360,8 @@ function contactScript(value) {
 
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+  <!-- END BODY -->
 
-  </body> <!-- END BODY -->
-
-
-<!-- Mirrored from broomstick.cc/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Dec 2019 20:41:47 GMT -->
+  <!-- Mirrored from broomstick.cc/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Dec 2019 20:41:47 GMT -->
 </html>
