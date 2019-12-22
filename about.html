@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<!--HEAD-->
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  <meta name="description"
+    content="Webside.io is an industry leading solution for web development, at a price that won't break the bank. We're here to support small businesses, and anyone that may need a modern, on-brand portfolio/brochure website for their business." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords"
+    content="webdevelopment, build_a_website, website, agency, web, development, design, design_company" />
+  <meta name="author" content="jhardyjhardy + angellemarie" />
+  <link rel="stylesheet" type-"text/css" href="resources/css/reset.min.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/style.min.css">
+  <link rel="shortcut icon" href="resources/images/logo%20blue.png" type="image/x-icon">
+  <title>broomstick</title>
+</head>
+<!--END HEAD-->
+
+
+<!--BODY-->
+
+<body>
+
+  <!--PAGE CONTAINER-->
+  <!-- master container for scalable body content, possibly unnecessary *** think on this one later -->
+  <div class="container page aboutUs column">
+
+    <!-- pagewidth container for header **** all sections/folds have pagewidth and sitewidth *** don't forget -->
+    <!-- ______ CONTAINER is pagewidth. _________ SITE CONTAINER is margined -->
+    <!--HEADER CONTAINER-->
+    <div class="container column pricing pageWidth" id="headerContainer">
+      <!--HEADER SITE CONTAINER-->
+      <div class="container row siteContainer" id="headerSiteContainer">
+        <!--HEADER LOGO CONTAINER-->
+        <a href="index-2.html" class="container column hContainer" id="headerLogoContainer">
+          <!-- white logo for transparent background before scroll -->
+          <img class="object logo" id="headerMainLogo" src="resources/images/headerLogoAgain.png">
+          <!-- blue logo for white bg after scroll past banner -->
+          <img class="object logo" id="headerScrollLogo" src="resources/images/headerLogoAgain.png">
+        </a>
+        <!-- HEADER NAV CONTAINER -->
+        <div class="navContainer hContainer container row" id="headerNavContainer">
+          <nav class="container headerNav row" id="headerNav">
+            <!-- non-button nav items yo -->
+            <p class="object navItem" id="navItem1"><a href="index-2.html">Home</a></p>
+            <p class="object navItem" id="navItem2"><a href="pricing.html">Pricing</a></p>
+            <p class="object navItem" id="navItem3"><a href="about.html">About Us</a></p>
+          </nav>
+          <!-- contact button -->
+          <a class="button outline pricing container" id="contactButton" href="contact.html">
+            <div class="container column" id="buttonOutline">
+              <p class="buttonText object" id="contactButtonText">Contact</p>
+            </div>
+          </a>
+          <!-- mobile burger *** opens overlay nav  -->
+          <div class="mobileNav pricing container column" id="mobileNavBurger" onclick="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div> <!-- END HEADER NAV -->
+      </div> <!-- END HEADER SITE CONTAINER -->
+    </div> <!-- END HEADER CONTAINER -->
+
+    <!-- overlay nav *** outside of header container -->
+    <div id="myNav" class="overlay">
+      <!-- el close button -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index-2.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- header image part -->
+    <div class="container column pageWidth" id="aboutContainer">
+      <!-- site container for about -->
+      <div class="container column siteContainer" id="aboutSite">
+        <!-- column top *** top left, neg margin to align with image-->
+        <div class="container column" id="aboutTop">
+          <h2 class="object">Why Us?</h2>
+          <p class="object">We are a web design agency that specializes in providing businesses with professional,
+            elegant websites. In today’s competitive markets, online presence cannot be overlooked. We take pride in
+            working closely with our clients and bringing their brands to life.</p>
+        </div>
+        <!-- column middle *** aka the two image halves -->
+        <div class="container row" id="aboutMiddle">
+          <!-- top left *** left image half -->
+          <div class="container column" id="aboutTopLeft">
+            <div class="container column" id="headImageLeft">
+              <img class="object" src="resources/images/aboutIconLeft.png" />
+            </div>
+          </div>
+          <!-- top right *** right image half-->
+          <div class="container column" id="aboutTopRight">
+            <div class="container column" id="headImageRight">
+              <img class="object" src="resources/images/aboutIconRight.png" />
+            </div>
+          </div>
+        </div>
+        <!-- column bottom *** only visible on small little baby screens -->
+        <!-- mobile text  -->
+        <div class="container column" id="mobileTextContainer">
+          <p class="object" id="mobileAboutText">We are a web design agency that specializes in providing
+            companies with professional, elegant websites. In today’s competitive markets, online presence cannot be
+            overlooked. We take pride in working closely with our clients and bringing their brands to life.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FEATURES PAGE CONTAINER *** edited clone of add-ons from pricing page with updated pixxx -->
+    <div class="container column pageWidth" id="addOnsContainer">
+
+      <!-- FEATURES SITE CONTAINER -->
+      <div class="container column siteContainer" id="addOnsSite">
+
+        <!-- SECTION HEADLINE -->
+        <div class="container column" id="addOnTitle">
+          <div id="addOnColorContainer">
+            <h2 class="object featuresHeadline">Our process</h2>
+          </div>
+        </div>
+
+        <!-- FEATURES FEATURE CONTAINER-->
+        <div class="container column featuresContainer">
+
+          <!-- FEATURE ROW CONTAINER (DUPLICATE THIS FOR MORE ROWS OF FEATURES) -->
+          <div class="container row featuresRow">
+
+            <!-- FEATURE ITEM, IMAGE WITH NON-OVERLAY TEXT (DUPLICATE THIS FOR MORE FEATURES PER ROW)-->
+            <div class="container column featureSquare">
+
+              <!-- ICON/IMAGE FOR FEATURE -->
+              <img class="object featureImage" src="resources/images/contractIcon.png" />
+
+              <!-- SUB-IMAGE-TEXT (NON OVERLAY FEATURES) -->
+              <div class="container column featureText">
+                <div class="object featureTitle">
+                  <p>Reach out, get a quote.</p>
+                </div>
+                <div class="object featureInfo">
+                  <p>You'll never know if you don't ask. The best way to get in touch with us is through our contact
+                    form. From there we can give you a super fast estimate as to what a new site would cost - letting
+                    you make an informed decision as soon as possible..</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- FEATURE ITEM, IMAGE WITH NON-OVERLAY TEXT (DUPLICATE THIS FOR MORE FEATURES PER ROW)-->
+            <div class="container column featureSquare">
+
+              <!-- ICON/IMAGE FOR FEATURE -->
+              <img class="object featureImage" src="resources/images/tableIcon.png" />
+
+              <!-- SUB-IMAGE-TEXT (NON OVERLAY FEATURES) -->
+              <div class="container column featureText">
+                <div class="object featureTitle">
+                  <p>Let us get to know your company.</p>
+                </div>
+                <div class="object featureInfo">
+                  <p>We want to know the ins and outs of your company culture, and website goals. Through our initial
+                    questionnaire, and 1-2 consultations we will gain a deep understanding of your aesthetic vocabulary,
+                    and functionality requirements.</p>
+                </div>
+              </div>
+
+            </div>
+            <!-- FEATURE ITEM, IMAGE WITH NON-OVERLAY TEXT (DUPLICATE THIS FOR MORE FEATURES PER ROW)-->
+            <div class="container column featureSquare">
+
+              <!-- ICON/IMAGE FOR FEATURE -->
+              <img class="object featureImage" src="resources/images/boxIcon.png" />
+
+              <!-- SUB-IMAGE-TEXT (NON OVERLAY FEATURES) -->
+              <div class="container column featureText">
+                <div class="object featureTitle">
+                  <p>Find out exactly what you're getting, before you pay.</p>
+                </div>
+                <div class="object featureInfo">
+                  <p>Before we see a dollar, you'll know exactly what you're getting, and when you're getting it. Our
+                    project outlines will detail every step of the way, deliverables and milestones, and associated
+                    costs. We won't start until we know you're happy with every last bit.</p>
+                </div>
+              </div>
+
+            </div>
+            <!-- FEATURE ITEM, IMAGE WITH NON-O ERLAY TEXT (DUPLICATE THIS FOR MORE FEATURES PER ROW)-->
+            <div class="container column featureSquare">
+
+              <!-- ICON/IMAGE FOR FEATURE -->
+              <img class="object featureImage" src="resources/images/shoeIcon.png" />
+
+              <!-- SUB-IMAGE-TEXT (NON OVERLAY FEATURES) -->
+              <div class="container column featureText">
+                <div class="object featureTitle">
+                  <p>We hit the ground running.</p>
+                </div>
+                <div class="object featureInfo">
+                  <p>Once the papers are signed, your project is underway. All of our sites are tailored to fit our
+                    clients specific needs. Depending on the scope, and desired add-ons, this process will vary client
+                    to client, but you can always expect progress reports each step of the way, along with opportunities
+                    for revision.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div> <!-- END FEATURE CLONE SITE WIDTH -->
+
+    </div> <!-- END FEATURE CLONE SECTION -->
+
+    <!-- TEXT AND BUTTON PAGE CONTAINER *** FROM HOMEPAGE CLONE -->
+    <div class="container column pageWidth textButtonContainer" id="textButtonContainer1">
+
+      <!-- TEXT AND BUTTON SITE CONTAINER -->
+      <div class="container column siteContainer textButtonSiteContainer" id="textButtonSiteContainer1">
+
+        <!-- SECTION TITLE -->
+        <a href="#" class="container column button" id="textButtonButton">
+          <p class="object buttonText" id="textButtonButtonText">Reach out</p>
+        </a>
+
+      </div> <!-- END SITE CONTAINER -->
+
+    </div> <!-- END PAGE CONTAINER -->
+
+
+
+    <!-- FOOTER CONTAINER -->
+    <footer class="footer container pageWidth column" id="footerContainer">
+      <!-- FOOTER SITE CONTAINER -->
+      <div class="container siteContainer row" id="footerSiteContainer">
+        <!-- FOOTER LEFT SIDE -->
+        <div class="container column" id="footerLeftContainer">
+          <div class="container column" id="footerLeftTop">
+            <img class="footerLogo object" id="footerLogoIcon" src="resources/images/footer%20logo.png">
+          </div>
+          <p class="object text copyright" id="footerCopyright"> &copy; <a href="index-2.html">Webside.io</a></p>
+        </div>
+        <!-- FOOTER NAV -->
+        <div class="container column" id="footerNavContainer">
+          <nav class="footerNav container row" id="footerNav">
+            <span class="footerNavItem object text"><a href="pricing.html">Pricing</a></span>
+            <span class="footerNavItem object text"><a href="about.html">About Us</a></span>
+            <span class="footerNavItem object text"><a href="contact.html">Contact</a></span>
+            <span class="footerNavItem object text"><a href="terms.html">Terms</a></span>
+          </nav>
+        </div>
+      </div> <!-- END FOOTER SITE CONTAINER -->
+    </footer> <!-- END FOOTER CONTAINER -->
+
+  </div> <!-- END PAGE CONTAINER -->
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NQQ99V7');
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQQ99V7" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- FIREBASE -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDmHohRLVQQKpL7m1pYpCeC7XOSxzwb9Yc",
+      authDomain: "webside-1110a.firebaseapp.com",
+      databaseURL: "https://webside-1110a.firebaseio.com",
+      projectId: "webside-1110a",
+      storageBucket: "webside-1110a.appspot.com",
+      messagingSenderId: "1027742748230"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <!-- END FIREBASE -->
+
+  <!-- FONT AWESOME -->
+  <script src="https://use.fontawesome.com/be62200700.js"></script>
+
+  <!-- MAIN JS FILE **** SHARING WITH PRICING *** ONLY THE OVERLAY NAV RN -->
+  <script src="resources/js/pricing.js"></script>
+
+
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body> <!-- END BODY -->
+
+
+<!-- Mirrored from webside.io/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Dec 2019 20:41:47 GMT -->
+
+</html>
